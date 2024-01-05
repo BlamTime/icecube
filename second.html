@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cube - Register</title>
+    <style>
+        body {
+            background-color: #aeeeee; /* Código de cor para azul bebê */
+            margin: 0; /* Remover margens padrão do corpo da página */
+            padding: 0; /* Remover preenchimento padrão do corpo da página */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 100% da altura da viewport */
+        }
+        .quadrado {
+            width: 650px; /* Largura do quadrado */
+            height: 650px; /* Altura do quadrado (aumentada para acomodar os novos elementos) */
+            background-color: rgba(152, 251, 152, 0.7); /* Cor verde bebê com opacidade */
+            border-radius: 20px; /* Borda arredondada */
+            text-align: center;
+            padding: 20px; /* Espaçamento interno */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .texto-pomposo {
+            font-family: "Times New Roman", serif; /* Escolha uma fonte mais pomposa, como Georgia */
+            font-size: 28px; /* Tamanho da fonte */
+            color: #dbffe0; /* Cor branca */
+            text-shadow: 0px 1px 1px #000000; /* Contorno preto com sombra de texto */
+            margin-bottom: 20px; /* Espaçamento inferior para separar do próximo elemento */
+        }
+        .link-cadastro {
+            color: #0000ff; /* Cor azul para o link de cadastro */
+            text-shadow: 1px 0px 0px #ffffff;
+            display: block; /* Fazer o link ocupar toda a largura disponível */
+            margin-top: 20px; /* Espaçamento superior */
+            font-size: 14px; /* Tamanho da fonte aumentado para tornar mais legível */
+            text-decoration: none; /* Remover sublinhado padrão do link */
+        }
+        .kk {
+            font-family: "Times New Roman", serif; /* Escolha uma fonte mais pomposa, como Georgia */
+            font-size: 28px; /* Tamanho da fonte */
+            color: #dbffe0; /* Cor branca */
+            text-shadow: 0px 1px 1px #000000; /* Contorno preto com sombra de texto */
+            margin-bottom: 20px; /* Espaçamento inferior para separar do próximo elemento */
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quadrado">
+        <!-- Texto de boas-vindas -->
+        <h2 class="texto-pomposo">Faça seu cadastro aqui</h2>
+        <br>
+        <!-- Opções de entrada de texto -->
+        <label class="kk" for="usuario">usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;senha</label>
+        <form onsubmit="submitLoginForm(event)">
+            <input type="text" name="name">
+            <input type="password" name="password">
+            <br><br><br>
+            <input type="submit" value="Register">
+            <br>
+            <a href="index.html">Já tem uma conta? Logue</a> 
+        </form>
+        <script type="text/javascript">
+            function submitLoginForm(event){
+            event.preventDefault();
+            console.log(event.target['name'].value);
+            console.log(event.target['password'].value);
+        }
+        </script>   
+</body>
+
+</html>
