@@ -1,0 +1,19 @@
+{
+  "name": "blamtime",
+  "version": "1.0.0",
+  "description": "- 👋 Hi, I’m @BlamTime\r - 👀 I’m interested in Computer Engineering\r - 🌱 I’m currently learning HTML, CSS, Javascript and C++\r - 💞️ I’m looking to collaborate on Game Development\r - 📫 How to reach me thegeraobr@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
