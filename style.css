@@ -58,3 +58,59 @@ body {
     margin-bottom: 20px; /* Espaçamento inferior para separar do próximo elemento */
     
 }
+input[type=text] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    /*border: 1px solid #555;*/
+    outline: none;
+}
+input[type=password] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    /*border: 1px solid #555;*/
+    outline: none;
+}
+input[type=text]:focus {
+    background-color: rgba(152, 251, 152, 0.1);
+    color:#000000;
+}
+input[type=password]:focus {
+    background-color: rgba(152, 251, 152, 0.1);
+    color:black;
+}
+input[type=submit]:focus {
+    background-color: rgba(152, 251, 152, 0.1);
+    color:black;
+}
+.iframe{
+    padding:10px;
+    background:#000;
+    webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width:560px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.forgodssake{
+    width: 3500px; /* Largura do quadrado */
+    height: 720px; /* Altura do quadrado (aumentada para acomodar os novos elementos) */
+    background-color: rgba(255, 255, 255); /* Cor verde bebê com opacidade */
+    border-radius: 50px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+}
